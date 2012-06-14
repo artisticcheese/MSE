@@ -130,8 +130,8 @@
     <Compile Include="MainGui.Designer.cs">
       <DependentUpon>MainGui.cs</DependentUpon>
     </Compile>
-    <Compile Include="MseLibrary\Class1.cs" />
     <Compile Include="MseLibrary\FrameInfo.cs" />
+    <Compile Include="MseLibrary\MdbgVersionPolicy.cs" />
     <Compile Include="MseLibrary\ProcessInfo.cs" />
     <Compile Include="MseLibrary\ProcessInfoCollection.cs" />
     <Compile Include="MseLibrary\SourcePosition.cs" />
