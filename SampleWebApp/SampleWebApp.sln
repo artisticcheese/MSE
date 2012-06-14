@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SampleWebApp\", "SampleWebApp", "{FB47436A-2DAB-4C65-90D9-ADD48F181AF4}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		Debug.AspNetCompiler.VirtualPath = "/SampleWebApp"
+		Debug.AspNetCompiler.PhysicalPath = "SampleWebApp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SampleWebApp\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SampleWebApp"
+		Release.AspNetCompiler.PhysicalPath = "SampleWebApp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SampleWebApp\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "13737"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://cpxtfsapp:8080/
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = SampleWebApp
+		SccProjectName1 = SampleWebApp
+		SccLocalPath1 = SampleWebApp
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB47436A-2DAB-4C65-90D9-ADD48F181AF4}.Debug|.NET.ActiveCfg = Debug|.NET
+		{FB47436A-2DAB-4C65-90D9-ADD48F181AF4}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

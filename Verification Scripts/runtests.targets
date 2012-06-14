@@ -1,0 +1,24 @@
+<!--
+***********************************************************************************************
+runtests.targets
+
+This file contains a MSBuild target for running the MSE tests. 
+The RunTests target is invoked from the runtests batch script.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Target Name="RunTests">
+
+    <!-- Run the unit tests -->
+    <Exec Command="&quot;$(NUnitDir)nunit-console.exe&quot; &quot;..\StackExplorer\mseTest\bin\$(Configuration)\mseTest.dll&quot;" />
+
+  </Target>
+
+  <!-- Import the settings.targets file to obtain the path to the NUnit directory. -->
+  <Import Project="..\StackExplorer\MSE.Settings.targets" />
+
+</Project>

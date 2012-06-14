@@ -1,0 +1,55 @@
+<!--
+***********************************************************************************************
+MSE.Settings.targets
+
+WARNING:  DO NOT CHECK IN this file when it contains paths to any dependencies. These paths
+          are machine specific and should not be stored in the source tree.
+
+This file is where you should set local paths to third party tools that are used when building 
+and/or testing MSE. When setting paths, be sure to add a trailing backslash at the end. 
+
+When adding a new third party dependency to MSE, a property should be created in this file
+that represents a path to that tool's directory. The ErrorText property can be overriden to 
+display an error message if a file in the tool's directory doesn't exist. For example, the 
+ErrorText property for NUnit checks that nunit.framework.dll resides in $(NUnitDir). If 
+nunit.framework.dll isn't present, the ErrorText property is set with an error message.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<!-- 
+      The log file path can be checked in because it relies on MSBuild properties to resolve machine specific paths
+      and it's always written to the same relative location.
+		-->
+		<FxCopLogFile>$(ProjectDir)$(OutputPath)$(TargetFileName).CodeAnalysisLog.xml</FxCopLogFile>
+
+		<!-- Code analysis on MSE is performed by FxCop 1.35, which is available at http://www.gotdotnet.com/team/fxcop/ -->
+		<FxCopExtDir Condition="$(FxCopExtDir) == ''">C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\</FxCopExtDir>
+		<ErrorText Condition="!Exists('$(FxCopExtDir)fxcopcmd.exe')">
+			"$(FxCopExtDir)fxcopcmd.exe"could not be found; FxCopExtDir must be set to a valid path in MSE.Settings.targets.
+		</ErrorText>
+
+		<!-- Unit tests for MSE are developed and run using NUnit 2.2.7, which is available at http://www.nunit.org -->
+		<NUnitDir Condition="$(NUnitDir) == ''">D:\Util\NUnit\</NUnitDir>
+		<ErrorText Condition="!Exists('$(NUnitDir)nunit.framework.dll')">
+			"$(NUnitDir)nunit.framework.dll"could not be found; NUnitDir must be set to a valid path in MSE.Settings.targets.
+		</ErrorText>
+
+		<!-- MSE requires ILMerge to create MSE.exe -->
+		<ILMergeDir Condition="$(ILMergeDir) == ''">D:\Util\</ILMergeDir>
+		<ErrorText Condition="!Exists('$(ILMergeDir)ILMerge.exe')">
+			"$(ILMergeDir)ILMerge.exe"could not be found; ILMergeDir must be set to a valid path in MSE.Settings.targets.
+		</ErrorText>
+
+		<CoreCompileDependsOn Condition="'$(ErrorText)' != ''">MseDependencyMissing</CoreCompileDependsOn>
+	</PropertyGroup>
+
+	<Target Name="MseDependencyMissing">
+		<Error Text="$(ErrorText)"/>
+	</Target>
+
+</Project>

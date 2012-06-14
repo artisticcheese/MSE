@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FormRun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\FormRun.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\Refresh.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RefreshDocView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\RefreshDocView.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShowAllComments" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\ShowAllComments.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\Save.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoAction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\NoAction.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\Search.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AboutBoxTitle" xml:space="preserve">
+    <value>About Managed Stack Explorer</value>
+  </data>
+  <data name="BeingLoggedToolTip" xml:space="preserve">
+    <value>Currently being logged</value>
+  </data>
+  <data name="combinationArgsError" xml:space="preserve">
+    <value>Invalid combination of arguments</value>
+  </data>
+  <data name="cpuTime" xml:space="preserve">
+    <value>CPU Time</value>
+  </data>
+  <data name="cpuUsage" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="depthError" xml:space="preserve">
+    <value>Stack depth must be 0 or greater</value>
+  </data>
+  <data name="descriptionWord" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="durationsError" xml:space="preserve">
+    <value>Duration must be one second or greater</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="forWord" xml:space="preserve">
+    <value>for</value>
+  </data>
+  <data name="gen0Coll" xml:space="preserve">
+    <value>Gen 0 Collections</value>
+  </data>
+  <data name="gen1Coll" xml:space="preserve">
+    <value>Gen 1 Collections</value>
+  </data>
+  <data name="gen2Coll" xml:space="preserve">
+    <value>Gen 2 Collections</value>
+  </data>
+  <data name="intervalTimeError" xml:space="preserve">
+    <value>Interval must be one second or greater</value>
+  </data>
+  <data name="invalidArgsError" xml:space="preserve">
+    <value>Invalid Arguments</value>
+  </data>
+  <data name="invalidIntervalError" xml:space="preserve">
+    <value>Invalid time intervals</value>
+  </data>
+  <data name="invalidProcOrThread" xml:space="preserve">
+    <value>Invalid process or thread id</value>
+  </data>
+  <data name="killError" xml:space="preserve">
+    <value>Kill command cannot be combined with other operations</value>
+  </data>
+  <data name="killIdError" xml:space="preserve">
+    <value>Cannot kill a process with id</value>
+  </data>
+  <data name="logEveryWord" xml:space="preserve">
+    <value>Logging every</value>
+  </data>
+  <data name="managedHeap" xml:space="preserve">
+    <value>Managed Heap</value>
+  </data>
+  <data name="ManagedProcesses" xml:space="preserve">
+    <value>Managed Processes</value>
+  </data>
+  <data name="moreArgsExpectedError" xml:space="preserve">
+    <value>More arguments expected</value>
+  </data>
+  <data name="mseCopyright" xml:space="preserve">
+    <value>Copyright (C) Microsoft Corporation. All rights reserved.</value>
+  </data>
+  <data name="mseDescription" xml:space="preserve">
+    <value>Managed Stack Explorer (MSE) is a lightweight tool that provides a quick and easy way to monitor .NET 2.0 managed processes and their stacks. The ability to view a program’s stack and how it changes over time is an important method in determining reasons for possible errors.  MSE provides a simple interface to allow you to monitor multiple processes at once and build periodic stack log files. MSE works by quickly attaching to a process when a stack trace is requested, then detaching the moment the stack trace has been retrieved. This way the interference in the normal operation of the process is minimized.</value>
+  </data>
+  <data name="mseTitleString" xml:space="preserve">
+    <value>Microsoft (R) Managed Stack Explorer 2005.</value>
+  </data>
+  <data name="numberFormatError" xml:space="preserve">
+    <value>Invalid Number</value>
+  </data>
+  <data name="parameterExpectedError" xml:space="preserve">
+    <value>Additional parameter expected for</value>
+  </data>
+  <data name="physicalMem" xml:space="preserve">
+    <value>Physical Memory</value>
+  </data>
+  <data name="processCompany" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="processDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="processIdError" xml:space="preserve">
+    <value>Invalid process id</value>
+  </data>
+  <data name="processInfoFor" xml:space="preserve">
+    <value>Process Info for</value>
+  </data>
+  <data name="processName" xml:space="preserve">
+    <value>Process Name</value>
+  </data>
+  <data name="repeatedCommandError" xml:space="preserve">
+    <value>Same command appears twice</value>
+  </data>
+  <data name="secondsWord" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="stackTraceFor" xml:space="preserve">
+    <value>Stack Trace for</value>
+  </data>
+  <data name="StartLogging" xml:space="preserve">
+    <value>Start Stack Logging</value>
+  </data>
+  <data name="StopLogging" xml:space="preserve">
+    <value>Stop Stack Logging</value>
+  </data>
+  <data name="threadsOf" xml:space="preserve">
+    <value>Threads of</value>
+  </data>
+  <data name="threadWord" xml:space="preserve">
+    <value>Thread</value>
+  </data>
+  <data name="timeInGC" xml:space="preserve">
+    <value>% Time in GC</value>
+  </data>
+  <data name="unknownArgError" xml:space="preserve">
+    <value>Unknown Argument</value>
+  </data>
+  <data name="virtualMem" xml:space="preserve">
+    <value>Virtual Memory</value>
+  </data>
+  <data name="sourceUnavailable" xml:space="preserve">
+    <value>Source Unavailable</value>
+  </data>
+  <data name="stackDepthAll" xml:space="preserve">
+    <value>Stack trace depth is set to show all frames</value>
+  </data>
+  <data name="StackDepthIs" xml:space="preserve">
+    <value>Stack trace depth is</value>
+  </data>
+  <data name="wordFrame" xml:space="preserve">
+    <value>frame</value>
+  </data>
+  <data name="wordFrames" xml:space="preserve">
+    <value>frames</value>
+  </data>
+  <data name="wordID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="wordThread" xml:space="preserve">
+    <value>Thread</value>
+  </data>
+  <data name="logRateError" xml:space="preserve">
+    <value>Stack logging rate must be</value>
+  </data>
+  <data name="milliOrGreater" xml:space="preserve">
+    <value>milliseconds or greater</value>
+  </data>
+  <data name="MSEfull" xml:space="preserve">
+    <value>Managed Stack Explorer</value>
+  </data>
+  <data name="processRefreshRateError" xml:space="preserve">
+    <value>Process list refresh rate must be</value>
+  </data>
+  <data name="saveSettings" xml:space="preserve">
+    <value>Do you want to save the changes to the settings?</value>
+  </data>
+  <data name="stackRefreshRateError" xml:space="preserve">
+    <value>Stack trace refresh rate must be</value>
+  </data>
+  <data name="threadRefreshRateError" xml:space="preserve">
+    <value>Thread refresh rate must be</value>
+  </data>
+  <data name="collapseDataViewButtonCollapse" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="collapseDataViewButtonExpand" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="findBoxCaption" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="findBoxFinished" xml:space="preserve">
+    <value>Finished searching stack</value>
+  </data>
+  <data name="invalidOutFileName" xml:space="preserve">
+    <value>{0}: The path "{1}" is invalid.</value>
+  </data>
+  <data name="outFileAccessDenied" xml:space="preserve">
+    <value>{0}: Access to the path "{1}" is denied.</value>
+  </data>
+  <data name="usageString" xml:space="preserve">
+    <value>Usage:
+{0} [process options] [thread options] [logging]
+
+Process options:
+
+/p(rocess) [process id,...]    Display list of managed processes.
+/i(nfo)                        Display info about the specified process(es).
+/k(ill)                        Kill the process(es) specified by /p.
+/s(tack)                       Display stack traces of all threads.
+/dep(th) &lt;depth&gt;               Number of stack frames to be shown when 
+                                   using /s. Default is to show all.
+
+Thread options:
+
+/t(hread) [thread id,...]      Display list of the threads of the process.
+/s(tack)                       Display stack traces of specified thread(s).
+/dep(th) &lt;depth&gt;               Number of stack frames to be shown when
+                                   using /s. Default is to show all.
+
+Logging options:
+
+/o(ut) &lt;fileName&gt;              Save output to a file.
+/l(og)                         Display periodic stack traces.
+/dur(ation) &lt;seconds&gt;          How long to display stack traces.
+                                   Default is infinite.
+/int(erval) &lt;seconds&gt;          How often to display updated stack traces.
+                                   Default is 5 seconds.
+
+Example:
+{0} /p 888 /t 2188 /l /int 5 /dur 30 /o log.txt</value>
+  </data>
+</root>

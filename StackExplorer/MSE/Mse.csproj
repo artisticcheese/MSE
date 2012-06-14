@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B247E217-B340-42BA-B660-69D5927F6D4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Mse.Gui</RootNamespace>
+    <AssemblyName>MSEPart</AssemblyName>
+    <ApplicationIcon>MseIcon.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/MSE/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;MDBG_FEATURE_INTEROP,MDBGENG_FEATURE_TRACECALLS,MDBGENG_FEATURE_CAPTUREOUTPUT,CORAPI_EXPOSE_RAW_INTERFACES</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunFxCop>false</RunFxCop>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;MDBG_FEATURE_INTEROP,MDBGENG_FEATURE_TRACECALLS,MDBGENG_FEATURE_CAPTUREOUTPUT,CORAPI_EXPOSE_RAW_INTERFACES</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'FxCop-Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\FxCop-Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;TRACE;DEBUG;MDBG_FEATURE_INTEROP,MDBGENG_FEATURE_TRACECALLS,MDBGENG_FEATURE_CAPTUREOUTPUT,CORAPI_EXPOSE_RAW_INTERFACES</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <RunFxCop>true</RunFxCop>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'FxCop-Release|AnyCPU' ">
+    <OutputPath>bin\FxCop-Release\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;TRACE;MDBG_FEATURE_INTEROP,MDBGENG_FEATURE_TRACECALLS,MDBGENG_FEATURE_CAPTUREOUTPUT,CORAPI_EXPOSE_RAW_INTERFACES</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <RunFxCop>true</RunFxCop>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArgumentExecuter.cs" />
+    <Compile Include="FindBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindBox.Designer.cs">
+      <DependentUpon>FindBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralProcessData.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="InfoSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoSelect.Designer.cs">
+      <DependentUpon>InfoSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGui.Designer.cs">
+      <DependentUpon>MainGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MseLibrary\Class1.cs" />
+    <Compile Include="MseLibrary\FrameInfo.cs" />
+    <Compile Include="MseLibrary\ProcessInfo.cs" />
+    <Compile Include="MseLibrary\ProcessInfoCollection.cs" />
+    <Compile Include="MseLibrary\SourcePosition.cs" />
+    <Compile Include="MseLibrary\ThreadInfo.cs" />
+    <Compile Include="PreferenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreferenceForm.Designer.cs">
+      <DependentUpon>PreferenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <EmbeddedResource Include="FindBox.resx">
+      <DependentUpon>FindBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoSelect.resx">
+      <DependentUpon>InfoSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGui.resx">
+      <DependentUpon>MainGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreferenceForm.resx">
+      <DependentUpon>PreferenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ShellIcon.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\RefreshDocView.bmp" />
+    <None Include="Icons\Refresh.bmp" />
+    <None Include="Icons\Save.bmp" />
+    <None Include="Icons\FormRun.bmp" />
+    <None Include="Icons\NoAction.bmp" />
+    <None Include="Icons\ShowAllComments.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Search.bmp" />
+    <Content Include="MseIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\mdbg\corapi\CorApi.csproj">
+      <Project>{04EF9865-E1B1-403D-802B-E4FAEA50A634}</Project>
+      <Name>CorApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdbg\NativeDebugWrappers\NativeDebugWrappers.csproj">
+      <Project>{3991AB6C-468B-4C28-95FC-3188CFB34180}</Project>
+      <Name>NativeDebugWrappers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdbg\raw\Raw.csproj">
+      <Project>{C18D303B-2C55-43EB-A3DF-39CF3FB1D447}</Project>
+      <Name>Raw</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- Import MSE.settings.targets so the build can find the 3rd party tools -->
+  <Import Project="..\MSE.Settings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  -->
+  <!-- If the FxCop log file exists after a FxCop run, FxCop found violations so produce a build error. -->
+  <Target Name="AfterBuild">
+    <Error Condition=" '$(RunFxCop)'=='true' and Exists('$(FxCopLogFile)') " Text="FxCop detected build violations." />
+  </Target>
+  <PropertyGroup Condition=" '$(Configuration)' != 'FxCop-Debug' And '$(Configuration)' != 'FxCop-Release' ">
+    <PostBuildEvent>call "$(ILMergeDir)ILMerge.exe" /target:exe /log /v2 /out:MSE.exe MSEPart.exe CorApi.dll CorApi2.dll</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(RunFxCop)'=='true'">
+    <PostBuildEvent>del "$(FxCopLogFile)"
+      call "$(FxCopExtDir)FxCopCmd.exe" /f:"$(TargetPath)" /o:"$(FxCopLogFile)" /rid:-Microsoft.Naming#CA1704 /rid:-Microsoft.Usage#CA2209 /console</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>call "$(ILMergeDir)ILMerge.exe" /target:winexe /log /v4 /out:MSE.exe MSEPart.exe CorApi.dll raw.dll NativeDebugWrappers.dll</PostBuildEvent>
+  </PropertyGroup>
+</Project>
